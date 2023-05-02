@@ -3,16 +3,20 @@ package main
 import "fmt"
 
 type Retangulo struct {
-	largura float64
-	altura  float64
+	Largura float64
+	Altura  float64
 }
 
 func Area(r Retangulo) float64 {
-	return r.altura * r.largura
+	return r.Altura * r.Largura
 }
 
 func main() {
-	var retangulo Retangulo
-	r := Area(retangulo)
+	var r Retangulo
+	fmt.Println("Informe a largura: ")
+	fmt.Scan(&Largura)
+	fmt.Println("Informe a largura: ")
+	fmt.Scan(&Altura)
+	r := Area(r)
 	fmt.Println(r)
 }
